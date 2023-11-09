@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingHorizontal="@dimen/_10sdp" >
+
+    <RelativeLayout
+        android:id="@+id/emailRL"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_45sdp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/LoginEmailET"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:layout_toStartOf="@+id/sellBTN"
+            android:background="@drawable/bg_edittext_round"
+            android:backgroundTint="@color/bg_ed_clr"
+            android:hint="Search"
+            android:inputType="textEmailAddress"
+            android:paddingHorizontal="10dp"
+            android:textColor="@color/black"
+            android:textCursorDrawable="@null"
+            android:textSize="@dimen/_12sdp" />
+
+        <Button
+            android:id="@+id/sellBTN"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="7dp"
+            android:background="@drawable/btn_round"
+            android:text="Sell"
+            android:visibility="gone"
+            android:textColor="@color/white" />
+
+    </RelativeLayout>
+
+   <!-- <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailRL">
+
+        <TextView
+            android:id="@+id/hotProduct1TV"
+            android:layout_width="match_parent"
+            android:layout_height="41dp"
+            android:layout_gravity="center"
+            android:gravity="center|left"
+            android:text=" Hot Products "
+            android:textColor="@color/orange"
+            android:textSize="@dimen/_14sdp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/orange"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/hotProductTV" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/hotProduct1RV"
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:layout_marginTop="@dimen/_10sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view" />
+
+    </LinearLayout>-->
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:scrollbars="none"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailRL"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/hotProductTV"
+                android:layout_width="0dp"
+                android:layout_height="41dp"
+                android:layout_gravity="center"
+                android:gravity="center|left"
+                android:text=" Hot Products "
+                android:textColor="@color/orange"
+                android:textSize="@dimen/_14sdp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/orange"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/hotProductTV" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/hotProductRV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view" />
+
+            <TextView
+                android:id="@+id/verifedTV"
+                android:layout_width="0dp"
+                android:layout_height="41dp"
+                android:layout_gravity="center"
+                android:gravity="center|left"
+                android:text=" Verified Commession Agent "
+                android:textColor="@color/orange"
+                android:textSize="@dimen/_14sdp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/hotProductRV" />
+
+            <View
+                android:id="@+id/view11"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/orange"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/verifedTV" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/verifiedRV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view11" />
+
+            <TextView
+                android:id="@+id/nonVerifedTV"
+                android:layout_width="0dp"
+                android:layout_height="41dp"
+                android:layout_gravity="center"
+                android:gravity="center|left"
+                android:text=" Commession Agent "
+                android:textColor="@color/orange"
+                android:textSize="@dimen/_14sdp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/verifiedRV" />
+
+            <View
+                android:id="@+id/nonview11"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/orange"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/nonVerifedTV" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/nonVerifiedRV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/nonview11" />
+
+       <TextView
+                android:id="@+id/saleProductTV"
+                android:layout_width="0dp"
+                android:layout_height="41dp"
+                android:layout_gravity="center"
+                android:gravity="center|left"
+                android:text="For Sale Product"
+                android:textColor="@color/orange"
+                android:textSize="@dimen/_14sdp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/nonVerifiedRV" />
+
+            <View
+                android:id="@+id/saleProductview11"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/orange"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/saleProductTV" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:id="@+id/saleProductRV"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/saleProductview11" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

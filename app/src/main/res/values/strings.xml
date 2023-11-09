@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">MVVMTempleteProject</string>
+
+    <string name="please_wait">Please Wait...</string>
+    <string name="no_internet">No Internet</string>
+    <string name="navigation_drawer_open">Navigation Drawer Open</string>
+    <string name="navigation_drawer_close">Navigation Drawer Closed</string>
+    <string name="welcome_back">Welcome Back</string>
+    <string name="email">Email</string>
+    <string name="my_profile">My Profile</string>
+
+
+</resources>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menuMyDashboard"
+        android:enabled="true"
+        android:title="My Dashboard" />
+
+    <item
+        android:id="@+id/menuCreatePost"
+        android:enabled="true"
+        android:title="Create My Post" />
+
+    <item
+        android:id="@+id/menuEditPost"
+        android:enabled="true"
+        android:title="Edit My Post" />
+
+    <item
+        android:id="@+id/menuGallery"
+        android:enabled="true"
+        android:title="Gallery" />
+
+    <item
+        android:id="@+id/menuBlog"
+        android:enabled="true"
+        android:title="Blog" />
+
+    <item
+        android:id="@+id/menuVideos"
+        android:title="Videos" />
+
+    <item
+        android:id="@+id/menuAboutUs"
+        android:title="About Us" />
+
+    <item
+        android:id="@+id/menuTermAndCondition"
+
+        android:title="Term and Condition" />
+
+    <item
+        android:id="@+id/menuPrivacyPolicy"
+        android:iconTint="@color/lavender"
+        android:title="Privacy policy" />
+
+    <item
+        android:id="@+id/menulogout"
+        android:title="Logout" />
+
+</menu>
